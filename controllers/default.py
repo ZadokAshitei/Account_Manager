@@ -1,0 +1,3 @@
+
+def addAccount():
+    return dict()

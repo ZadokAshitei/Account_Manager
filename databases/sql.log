@@ -1,0 +1,9 @@
+timestamp: 2018-11-20T12:55:22.747800
+CREATE TABLE "users"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "db_account_name" CHAR(512),
+    "db_account_number" CHAR(512),
+    "db_bank" CHAR(512),
+    "db_branch" CHAR(512)
+);
+success!
