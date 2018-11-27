@@ -1,0 +1,17 @@
+<link rel="stylesheet" type="text/css" href="{{=URL('static','css/style.css')}}"/>
+
+<div class="addAccount">
+  <h1>View All Accounts</h1>
+    {{if users:}}
+      {{for user in users:}}
+        <p>
+          Account Name: {{=user.db_account_name}}<br>
+          Account Number: {{=user.db_account_number}}<br>
+          Bank : {{=user.db_bank}}<br>
+          Branch : {{=user.db_branch}}<br>
+        </p>
+        {{pass}}
+    {{else:}}
+      <h2>No Users Found</h2>
+    {{pass}}
+</div>

@@ -1,28 +1,26 @@
-<link rel="stylesheet" href="{{=URL('static','css/styles.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{=URL('static','css/style.css')}}"/>
 
+<div class="addAccount">
+  <h1>Add Account</h1>
+  <form action="{{=URL('save')}}" method="post">
+    <div class="textbox">
+      <input type="text" name="account_name" placeholder="Account Name">
+    </div>
 
-<form action="" method="post">
-  <div>
-    <label for="account_name">Account Name</label>
-    <input type="text" name="account_name">
-  </div>
+    <div class="textbox">
+      <input type="text" name="account_number" placeholder="Account Number">
+    </div>
 
-  <div >
-    <label for="account_number">Account Number</label>
-    <input type="text" name="account_number">
-  </div>
+    <div class="textbox">
+      <input type="text" name="bank" placeholder="Bank">
+    </div>
 
-  <div>
-    <label for="bank">Branch</label>
-    <input type="text" name="Bank">
-  </div>
+    <div class="textbox">
+      <input type="text" name="branch" placeholder="Branch">
+    </div>
 
-  <div>
-    <label for="branch">Branch</label>
-    <input type="text" name="Branch">
-  </div>
-
-  <div>
-    <input type="submit" value="Add Account">
-  </div>
-</form>
+    <div>
+      <input class="btn" type="submit" value="Add Account">
+    </div>
+  </form>
+</div>
