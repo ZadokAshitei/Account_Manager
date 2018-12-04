@@ -1,0 +1,30 @@
+<link rel="stylesheet" type="text/css" href="{{=URL('static','css/style.css')}}"/>
+
+<div class="addAccount">
+  <h1>Edit Account</h1>
+  <form action="{{=URL('update')}}" method="post">
+    <div class="textbox">
+      <input type="text" name="account_name" placeholder="Account Name">
+    </div>
+
+    <div class="textbox">
+      <input type="text" name="account_number" placeholder="Account Number">
+    </div>
+
+    <div class="textbox">
+      <input type="text" name="bank" placeholder="Bank">
+    </div>
+
+    <div class="textbox">
+      <input type="text" name="branch" placeholder="Branch">
+    </div>
+
+    <div class="textbox">
+      <input type="number" name="id" placeholder="ID">
+    </div>
+
+    <div>
+      <input class="btn" type="submit" value="Update Account">
+    </div>
+  </form>
+</div>

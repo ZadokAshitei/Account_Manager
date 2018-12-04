@@ -1,9 +1,9 @@
 <link rel="stylesheet" type="text/css" href="{{=URL('static','css/style.css')}}"/>
 
-<div class="addAccount">
+<div class="addAccount bordered">
   <h1>View All Accounts</h1>
-    {{if users:}}
-      {{for user in users:}}
+    {{if accounts:}}
+      {{for user in accounts:}}
         <p>
           Account Name: {{=user.db_account_name}}<br>
           Account Number: {{=user.db_account_number}}<br>
