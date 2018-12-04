@@ -4,7 +4,9 @@ body{
   font-family: sans-serif;
   background-color: black;
 }
-
+p{
+  border-bottom: 6px solid #39e600;
+}
 .addAccount{
   width : 280px;
   position: absolute;
@@ -22,6 +24,21 @@ body{
   padding: 13px 0;
 }
 
+.addAccount a{
+  width: 100%;
+  background: none;
+  border: 2px solid #39e600;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  margin: 12px 0;
+  border-radius: 200px;
+  text-decoration: none;
+}
+
+.link{
+  color:#39e600;
+}
 
 .textbox{
   width: 100%;

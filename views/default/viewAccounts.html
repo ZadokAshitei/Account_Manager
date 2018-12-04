@@ -1,14 +1,16 @@
 <link rel="stylesheet" type="text/css" href="{{=URL('static','css/style.css')}}"/>
 
-<div class="addAccount bordered">
+<div class="addAccount">
   <h1>View All Accounts</h1>
     {{if accounts:}}
       {{for user in accounts:}}
-        <p>
+        <p style="border-bottom: 2px solid #39e600;">
           Account Name: {{=user.db_account_name}}<br>
           Account Number: {{=user.db_account_number}}<br>
           Bank : {{=user.db_bank}}<br>
-          Branch : {{=user.db_branch}}<br>
+          Branch : {{=user.db_branch}}<br><br>
+          <a href="#">Edit Account</a>
+          <a href="#">Delete Account</a> <br><br>
         </p>
         {{pass}}
     {{else:}}
