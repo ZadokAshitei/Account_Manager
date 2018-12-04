@@ -3,17 +3,17 @@
 <div class="addAccount">
   <h1>View All Accounts</h1>
     {{if accounts:}}
-      {{for user in accounts:}}
+      {{for account in accounts:}}
         <p style="border-bottom: 2px solid #39e600;">
-          Account Name: {{=user.db_account_name}}<br>
-          Account Number: {{=user.db_account_number}}<br>
-          Bank : {{=user.db_bank}}<br>
-          Branch : {{=user.db_branch}}<br><br>
-          <a href="#">Edit Account</a>
-          <a href="#">Delete Account</a> <br><br>
+          Account Name: {{=account.db_account_name}}<br>
+          Account Number: {{=account.db_account_number}}<br>
+          Bank : {{=account.db_bank}}<br>
+          Branch : {{=account.db_branch}}<br><br>
+          <a href="{{=URL('editAccount', args=account.id)}}">Edit Account</a>
+          <a href="{{=URL('delete', args=account.id)}}">Delete Account</a> <br><br>
         </p>
         {{pass}}
     {{else:}}
-      <h2>No Users Found</h2>
+      <h2>No Accounts Found</h2>
     {{pass}}
 </div>

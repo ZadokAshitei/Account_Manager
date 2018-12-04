@@ -27,7 +27,9 @@ def viewAccounts():
     return dict(accounts=accounts)
 
 def editAccount():
-    return dict()
+    parameters = request.args
+    submitted_id = parameters[0]
+    return dict(id=submitted_id)
 
 def update():
     submitted_account_name = request.vars.account_name
