@@ -29,7 +29,11 @@ def viewAccounts():
 def editAccount():
     parameters = request.args
     submitted_id = parameters[0]
-    return dict(id=submitted_id)
+
+    if db(db.accounts.id == submitted_id):
+        return dict(id=submitted_id)
+    else:
+        return "No Account with ID found"    
 
 def update():
     submitted_account_name = request.vars.account_name
